@@ -1,8 +1,7 @@
 // src/pages/LoginPage.jsx
 import { useState } from 'react'; // 1. 引入 useState
 import apiClient from '../api/axios'; // 新增：引入 apiClient
-//import { useAuth } from '../context/AuthContext.jsx'; // 引入useAuth
-import { useAuth } from '../context/auth';
+import { useAuth } from '../context/AuthContext'; // 引入useAuth
 import { useNavigate } from 'react-router-dom'; 
 
 function LoginPage() {

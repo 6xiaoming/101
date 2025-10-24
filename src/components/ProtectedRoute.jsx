@@ -1,5 +1,5 @@
 // src/components/ProtectedRoute.jsx
-import { useAuth } from '../context/AuthContext'; // 引入useAuth
+import { useAuth } from '../context/useAuth'; // 引入useAuth
 import { Navigate, Outlet } from 'react-router-dom';
 
 function ProtectedRoute() {

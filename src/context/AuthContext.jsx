@@ -1,4 +1,4 @@
-import { createContext, useState, useContext, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext(null);
 
@@ -32,7 +32,4 @@ export function AuthProvider({ children }) {
     return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
-// 3. 创建一个自定义Hook，方便其他组件使用
-export function useAuth() {
-    return useContext(AuthContext);
-}
+export { AuthContext };
